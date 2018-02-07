@@ -1,10 +1,12 @@
 package manager
 {
 	import flash.display.Sprite;
+	
+	import modules.scene.Scene;
 
 	public class LayerManager
 	{
-		public var scene:Sprite;
+		public var map:Sprite;
 		public var ui:Sprite;
 		public var win:Sprite;
 		
@@ -21,10 +23,10 @@ package manager
 		}
 		public function init(parent:Sprite):void
 		{
-			scene = new Sprite;
+			map = Scene.getInstance();
 			ui = new Sprite;
 			win = new Sprite;
-			parent.addChild(scene);
+			parent.addChild(map);
 			parent.addChild(ui);
 			parent.addChild(win);
 		}

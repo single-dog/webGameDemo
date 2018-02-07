@@ -2,9 +2,9 @@ package modules.scene
 {
 	import flash.display.Sprite;
 	
-	public class map extends Sprite
+	public class Biology extends Sprite
 	{
-		public function map()
+		public function Biology()
 		{
 			super();
 		}
